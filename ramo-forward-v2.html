@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMO Forward – Freight, Without Friction</title>
+    <meta name="description" content="Logistics designed for companies that value control, clarity, and margin. Systems over improvisation.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="freight forwarding, logistics, cargo, shipping, transportation, supply chain, Mexico, USA">
+    <meta name="author" content="RAMO Forward">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ramoforward.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramoforward.com/">
+    <meta property="og:title" content="RAMO Forward – Freight, Without Friction">
+    <meta property="og:description" content="Logistics designed for companies that value control, clarity, and margin. We build systems—not excuses.">
+    <meta property="og:image" content="https://ramoforward.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ramoforward.com/">
+    <meta name="twitter:title" content="RAMO Forward – Freight, Without Friction">
+    <meta name="twitter:description" content="Logistics designed for companies that value control, clarity, and margin. We build systems—not excuses.">
+    <meta name="twitter:image" content="https://ramoforward.com/og-image.jpg">
+
+    <!-- Favicon (placeholder - replace with actual favicon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'><rect width='44' height='44' rx='10' fill='%2300E5FF'/><path d='M14 32V12H24C27.866 12 31 15.134 31 19C31 21.95 29.15 24.45 26.5 25.5L32 32' stroke='%230B0F1A' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+    <!-- Fonts: Clash Display + Satoshi -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Nueva paleta: Deep Space con acentos Cyan/Lime */
+            --color-void: #0B0F1A;
+            --color-deep: #111827;
+            --color-surface: #1A2234;
+            --color-elevated: #243044;
+            --color-muted: #4B5563;
+            --color-subtle: #9CA3AF;
+            --color-light: #E5E7EB;
+            --color-white: #FFFFFF;
+
+            /* Acentos vibrantes */
+            --color-cyan: #00E5FF;
+            --color-cyan-glow: rgba(0, 229, 255, 0.15);
+            --color-emerald: #14b8a6;
+            --color-gradient: linear-gradient(135deg, #00E5FF 0%, #14b8a6 100%);
+            --color-gradient-subtle: linear-gradient(135deg, rgba(0, 229, 255, 0.1) 0%, rgba(20, 184, 166, 0.08) 100%);
+
+            --font-display: 'Clash Display', sans-serif;
+            --font-body: 'Satoshi', sans-serif;
+
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2.5rem;
+            --space-xl: 4rem;
+            --space-2xl: 6rem;
+            --space-3xl: 10rem;
+
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-void);
+            color: var(--color-light);
+            line-height: 1.7;
+            font-weight: 400;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background: var(--color-cyan);
+            color: var(--color-void);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: var(--color-white);
+            line-height: 1.1;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            letter-spacing: -0.03em;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-size: 1.0625rem;
+            max-width: 65ch;
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: var(--color-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        section {
+            padding: var(--space-3xl) 0;
+            position: relative;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.8s var(--transition-base) forwards;
+            opacity: 0;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(11, 15, 26, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        /* Logo SVG */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: var(--color-white);
+            letter-spacing: -0.02em;
+        }
+
+        .logo-text span {
+            color: var(--color-cyan);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-lg);
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--color-subtle);
+            text-decoration: none;
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-gradient);
+            transition: var(--transition-fast);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-white);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--color-gradient);
+            color: var(--color-void);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 229, 255, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--color-white);
+            transition: var(--transition-base);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        /* Grid pattern */
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 80% 50% at 50% 50%, black 40%, transparent 100%);
+        }
+
+        /* Floating orbs */
+        .hero-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-orb-1 {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.15) 0%, transparent 70%);
+            top: -20%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .hero-orb-2 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.12) 0%, transparent 70%);
+            bottom: -10%;
+            left: -5%;
+            animation-delay: -4s;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: 100px;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--color-subtle);
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-cyan);
+            border-radius: 50%;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .hero h1 {
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-subtitle {
+            font-size: 1.375rem;
+            color: var(--color-subtle);
+            max-width: 600px;
+            margin-bottom: var(--space-xl);
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 32px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--color-gradient);
+            color: var(--color-void);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 229, 255, 0.35);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-elevated);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-surface);
+            border-color: var(--color-cyan);
+        }
+
+        .btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Stats bar */
+        .hero-stats {
+            display: flex;
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--color-elevated);
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 600;
+            background: var(--color-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--color-muted);
+        }
+
+        /* Section header component */
+        .section-header {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--color-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: var(--space-sm);
+        }
+
+        .section-label::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--color-gradient);
+        }
+
+        .section-header p {
+            color: var(--color-subtle);
+            font-size: 1.25rem;
+            margin-top: var(--space-md);
+            max-width: 600px;
+        }
+
+        /* Problem Section */
+        .problem {
+            background: var(--color-deep);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--color-gradient);
+            opacity: 0.3;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .problem-card {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: var(--radius-lg);
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--color-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition-base);
+        }
+
+        .problem-card:hover {
+            border-color: rgba(0, 229, 255, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .problem-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .problem-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-cyan-glow);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-md);
+            color: var(--color-cyan);
+        }
+
+        .problem-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .problem-card h3 {
+            margin-bottom: var(--space-xs);
+            font-weight: 500;
+        }
+
+        .problem-card p {
+            color: var(--color-subtle);
+            font-size: 0.9375rem;
+        }
+
+        /* Approach Section */
+        .approach {
+            background: var(--color-void);
+        }
+
+        .approach-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .approach-visual {
+            position: relative;
+            height: 500px;
+        }
+
+        .approach-diagram {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Animated diagram */
+        .diagram-ring {
+            position: absolute;
+            border: 1px solid var(--color-elevated);
+            border-radius: 50%;
+        }
+
+        .diagram-ring-1 {
+            width: 300px;
+            height: 300px;
+            border-color: rgba(0, 229, 255, 0.2);
+        }
+
+        .diagram-ring-2 {
+            width: 220px;
+            height: 220px;
+            border-color: rgba(20, 184, 166, 0.2);
+        }
+
+        .diagram-ring-3 {
+            width: 140px;
+            height: 140px;
+            border-color: rgba(0, 229, 255, 0.3);
+        }
+
+        .diagram-center {
+            width: 80px;
+            height: 80px;
+            background: var(--color-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .diagram-center svg {
+            width: 36px;
+            height: 36px;
+            color: var(--color-void);
+        }
+
+        .diagram-node {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            background: var(--color-surface);
+            border: 2px solid var(--color-elevated);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-base);
+        }
+
+        .diagram-node:hover {
+            border-color: var(--color-cyan);
+            transform: scale(1.1);
+        }
+
+        .diagram-node svg {
+            width: 20px;
+            height: 20px;
+            color: var(--color-cyan);
+        }
+
+        .diagram-node-1 { top: 10%; left: 50%; transform: translateX(-50%); }
+        .diagram-node-2 { top: 35%; right: 5%; }
+        .diagram-node-3 { bottom: 35%; right: 5%; }
+        .diagram-node-4 { bottom: 10%; left: 50%; transform: translateX(-50%); }
+        .diagram-node-5 { bottom: 35%; left: 5%; }
+        .diagram-node-6 { top: 35%; left: 5%; }
+
+        .approach-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .approach-item {
+            display: flex;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-elevated);
+            transition: var(--transition-base);
+        }
+
+        .approach-item:hover {
+            border-color: var(--color-cyan);
+            background: var(--color-elevated);
+        }
+
+        .approach-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gradient);
+            border-radius: var(--radius-md);
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--color-void);
+        }
+
+        .approach-item h3 {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .approach-item p {
+            color: var(--color-subtle);
+            font-size: 0.9375rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--color-deep);
+        }
+
+        .steps-container {
+            position: relative;
+        }
+
+        .steps-line {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--color-elevated);
+        }
+
+        .steps-line-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--color-gradient);
+            transition: width 1s ease-out;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            position: relative;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto var(--space-lg);
+            background: var(--color-surface);
+            border: 2px solid var(--color-elevated);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: var(--transition-base);
+        }
+
+        .step:hover .step-icon {
+            border-color: var(--color-cyan);
+            box-shadow: 0 0 40px rgba(0, 229, 255, 0.2);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            width: 36px;
+            height: 36px;
+            background: var(--color-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--color-void);
+        }
+
+        .step-icon svg {
+            width: 48px;
+            height: 48px;
+            color: var(--color-cyan);
+        }
+
+        .step-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-emerald);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .step h3 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .step p {
+            color: var(--color-subtle);
+            font-size: 0.9375rem;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        /* Services */
+        .services {
+            background: var(--color-void);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+
+        .service-card {
+            padding: var(--space-xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: var(--radius-lg);
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: var(--color-gradient-subtle);
+            opacity: 0;
+            transition: var(--transition-base);
+        }
+
+        .service-card:hover {
+            border-color: var(--color-cyan);
+            transform: translateY(-6px);
+        }
+
+        .service-card:hover::after {
+            opacity: 1;
+        }
+
+        .service-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-cyan-glow);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-md);
+        }
+
+        .service-icon svg {
+            width: 32px;
+            height: 32px;
+            color: var(--color-cyan);
+        }
+
+        .service-card h3 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .service-card p {
+            color: var(--color-subtle);
+            font-size: 0.9375rem;
+        }
+
+        /* Clients Section */
+        .clients {
+            background: var(--color-deep);
+            position: relative;
+        }
+
+        .clients-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .client-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .client-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: var(--space-md) var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: var(--radius-md);
+            transition: var(--transition-base);
+        }
+
+        .client-item:hover {
+            border-color: var(--color-cyan);
+            transform: translateX(8px);
+        }
+
+        .client-check {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gradient);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .client-check svg {
+            width: 14px;
+            height: 14px;
+            color: var(--color-void);
+        }
+
+        .client-item span {
+            font-weight: 500;
+        }
+
+        .filter-box {
+            padding: var(--space-xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: var(--radius-xl);
+            position: relative;
+        }
+
+        .filter-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: var(--space-xl);
+            right: var(--space-xl);
+            height: 3px;
+            background: var(--color-gradient);
+            border-radius: 0 0 3px 3px;
+        }
+
+        .filter-quote {
+            font-size: 1.375rem;
+            font-weight: 500;
+            color: var(--color-white);
+            margin-bottom: var(--space-md);
+            line-height: 1.5;
+        }
+
+        .filter-highlight {
+            font-size: 1.125rem;
+            background: var(--color-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+
+        /* Why Section */
+        .why {
+            background: var(--color-void);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: var(--space-sm);
+        }
+
+        .why-item {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border: 1px solid var(--color-elevated);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: var(--transition-base);
+        }
+
+        .why-item:hover {
+            border-color: var(--color-cyan);
+            transform: translateY(-6px);
+        }
+
+        .why-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-gradient);
+            border-radius: var(--radius-lg);
+        }
+
+        .why-icon svg {
+            width: 36px;
+            height: 36px;
+            color: var(--color-void);
+        }
+
+        .why-item h3 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Philosophy */
+        .philosophy {
+            background: var(--color-deep);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .philosophy-bg {
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(ellipse 100% 50% at 50% 100%, rgba(0, 229, 255, 0.05) 0%, transparent 70%);
+        }
+
+        .philosophy-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .philosophy blockquote {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 500;
+            color: var(--color-white);
+            line-height: 1.3;
+            margin-bottom: var(--space-lg);
+        }
+
+        .philosophy blockquote span {
+            background: var(--color-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .philosophy p {
+            color: var(--color-subtle);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: var(--color-void);
+            text-align: center;
+            padding: var(--space-3xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 40% at 50% 0%, rgba(0, 229, 255, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 50% 100%, rgba(20, 184, 166, 0.06) 0%, transparent 60%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta h2 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .cta p {
+            color: var(--color-subtle);
+            font-size: 1.25rem;
+            max-width: 550px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-void);
+            border-top: 1px solid var(--color-elevated);
+            padding: var(--space-xl) 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-tagline {
+            color: var(--color-muted);
+            font-size: 0.9375rem;
+        }
+
+        .footer-tagline span {
+            color: var(--color-cyan);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--color-void);
+            padding: var(--space-lg);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+        }
+
+        .mobile-nav.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: var(--space-md) 0;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-white);
+            text-decoration: none;
+            border-bottom: 1px solid var(--color-elevated);
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .why-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .approach-content {
+                grid-template-columns: 1fr;
+            }
+
+            .approach-visual {
+                display: none;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .steps-line {
+                display: none;
+            }
+
+            .step {
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                gap: var(--space-lg);
+                text-align: left;
+            }
+
+            .step-icon {
+                width: 100px;
+                height: 100px;
+                margin: 0;
+            }
+
+            .step p {
+                max-width: none;
+                margin: 0;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .clients-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: var(--space-2xl) 0;
+            }
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
+            }
+
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: var(--space-lg);
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <!-- Custom Logo SVG - R Monogram -->
+                <svg class="logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="44" rx="10" fill="url(#logoGrad)"/>
+                    <path d="M14 32V12H24C27.866 12 31 15.134 31 19C31 21.95 29.15 24.45 26.5 25.5L32 32" stroke="#0B0F1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00E5FF"/>
+                            <stop offset="1" stop-color="#14b8a6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">RAMO<span>Forward</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why">Why Us</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Request a Shipment</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#approach">Our Approach</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Request a Shipment</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <span class="hero-badge-dot"></span>
+                    Freight Forwarding & Logistics
+                </div>
+                <h1 class="animate-fade-up animate-delay-1">
+                    Freight, <span class="gradient-text">without friction</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-up animate-delay-2">
+                    We move cargo with systems, not improvisation. Logistics designed for companies that value control, clarity, and margin.
+                </p>
+                <div class="hero-actions animate-fade-up animate-delay-3">
+                    <a href="#contact" class="btn btn-primary">
+                        Request a Shipment
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Talk to an Expert</a>
+                </div>
+
+                <div class="hero-stats animate-fade-up animate-delay-4">
+                    <div class="stat">
+                        <span class="stat-value">98%</span>
+                        <span class="stat-label">On-time delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">Real-time tracking</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">500+</span>
+                        <span class="stat-label">Verified carriers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">The Problem</span>
+                <h2>Traditional logistics <span class="gradient-text">is broken</span></h2>
+                <p>Every day, operations leaders waste time on problems that shouldn't exist.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                    </div>
+                    <h3>Too many calls</h3>
+                    <p>Endless phone calls and messages to coordinate a single shipment. Time that could be spent on your business.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                    </div>
+                    <h3>Zero visibility</h3>
+                    <p>You don't know where your cargo is until someone decides to tell you. If they remember.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <h3>Costly errors</h3>
+                    <p>Wrong routes, delayed shipments, damaged goods. Mistakes that eat directly into your margin.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                        </svg>
+                    </div>
+                    <h3>Constant improvisation</h3>
+                    <p>Every shipment feels like the first one. No systems, no processes, just chaos management.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                        </svg>
+                    </div>
+                    <h3>Unreliable providers</h3>
+                    <p>Carriers without systems. Brokers without accountability. Partners without standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" id="approach">
+        <div class="container">
+            <div class="approach-content">
+                <div class="approach-visual">
+                    <div class="approach-diagram">
+                        <div class="diagram-ring diagram-ring-1"></div>
+                        <div class="diagram-ring diagram-ring-2"></div>
+                        <div class="diagram-ring diagram-ring-3"></div>
+                        <div class="diagram-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                        </div>
+                        <div class="diagram-node diagram-node-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="section-header reveal">
+                        <span class="section-label">Our Approach</span>
+                        <h2>Systems over <span class="gradient-text">improvisation</span></h2>
+                        <p>We eliminate friction by automating what can be automated, and adding human expertise only where it creates real value.</p>
+                    </div>
+
+                    <div class="approach-list">
+                        <div class="approach-item reveal">
+                            <div class="approach-number">1</div>
+                            <div>
+                                <h3>Automation first</h3>
+                                <p>Every routine task is systematized. Tracking, updates, documentation—handled automatically.</p>
+                            </div>
+                        </div>
+                        <div class="approach-item reveal">
+                            <div class="approach-number">2</div>
+                            <div>
+                                <h3>Strategic intervention</h3>
+                                <p>Human expertise where it matters: complex decisions, problem resolution, relationship management.</p>
+                            </div>
+                        </div>
+                        <div class="approach-item reveal">
+                            <div class="approach-number">3</div>
+                            <div>
+                                <h3>Curated network</h3>
+                                <p>We don't work with everyone. Strategic selection of routes and carriers based on performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto var(--space-2xl);">
+                <span class="section-label">How It Works</span>
+                <h2>Three steps to <span class="gradient-text">controlled logistics</span></h2>
+                <p>A structured process designed to give you clarity and control at every stage.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="steps-line">
+                    <div class="steps-line-progress"></div>
+                </div>
+                <div class="steps">
+                    <div class="step reveal">
+                        <div class="step-icon">
+                            <span class="step-number">1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                            </svg>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Strategic Evaluation</span>
+                            <h3>Route & Margin Analysis</h3>
+                            <p>We analyze your requirements, identify optimal routes, and evaluate providers based on performance data.</p>
+                        </div>
+                    </div>
+
+                    <div class="step reveal">
+                        <div class="step-icon">
+                            <span class="step-number">2</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Intelligent Execution</span>
+                            <h3>Efficient Assignment</h3>
+                            <p>Automated carrier assignment and real-time tracking. You know where your cargo is, always.</p>
+                        </div>
+                    </div>
+
+                    <div class="step reveal">
+                        <div class="step-icon">
+                            <span class="step-number">3</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-label">Continuous Control</span>
+                            <h3>Real-time Visibility</h3>
+                            <p>Live updates, proactive alerts, and data-driven decisions. No surprises, no excuses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Our Services</span>
+                <h2>What we <span class="gradient-text">move</span></h2>
+                <p>Specialized in routes where consistency and reliability matter more than the lowest bid.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+                        </svg>
+                    </div>
+                    <h3>National Freight</h3>
+                    <p>Full coverage across Mexico and the United States with verified carriers and consistent service levels.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                        </svg>
+                    </div>
+                    <h3>Long-haul & Regional</h3>
+                    <p>From cross-country routes to regional distribution, with carriers selected for each lane.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                        </svg>
+                    </div>
+                    <h3>Recurring Lanes</h3>
+                    <p>Frequency-based logistics for companies with regular shipping needs. Predictable capacity, predictable costs.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                        </svg>
+                    </div>
+                    <h3>Dry Freight</h3>
+                    <p>Standard cargo operations with the same attention to detail and systematic approach.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                    </div>
+                    <h3>Controlled Operations</h3>
+                    <p>When cargo requires special handling, documentation, or security protocols.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                        </svg>
+                    </div>
+                    <h3>Strategic Sourcing</h3>
+                    <p>Carrier selection based on data, not relationships. Performance metrics that protect your margin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="clients-content">
+                <div>
+                    <div class="section-header reveal">
+                        <span class="section-label">Who We Work With</span>
+                        <h2>Built for <span class="gradient-text">decision-makers</span></h2>
+                        <p>We partner with companies that understand the difference between cost and value.</p>
+                    </div>
+
+                    <div class="client-list">
+                        <div class="client-item reveal">
+                            <div class="client-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <span>CEOs and company founders</span>
+                        </div>
+                        <div class="client-item reveal">
+                            <div class="client-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <span>Directors of operations</span>
+                        </div>
+                        <div class="client-item reveal">
+                            <div class="client-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <span>Logistics managers</span>
+                        </div>
+                        <div class="client-item reveal">
+                            <div class="client-check">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.5 12.75l6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <span>Companies with recurring routes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-box reveal">
+                    <p class="filter-quote">"If you're looking for the cheapest price, we're not for you."</p>
+                    <p class="filter-highlight">If you're looking for operational peace of mind, let's talk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="section-header reveal" style="text-align: center; max-width: 600px; margin: 0 auto var(--space-2xl);">
+                <span class="section-label">Why RAMO Forward</span>
+                <h2>What sets us <span class="gradient-text">apart</span></h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item reveal">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+                        </svg>
+                    </div>
+                    <h3>Disciplined Route Selection</h3>
+                </div>
+
+                <div class="why-item reveal">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                        </svg>
+                    </div>
+                    <h3>Margin-focused Operations</h3>
+                </div>
+
+                <div class="why-item reveal">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </div>
+                    <h3>Minimal Human Friction</h3>
+                </div>
+
+                <div class="why-item reveal">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                        </svg>
+                    </div>
+                    <h3>Clear Communication</h3>
+                </div>
+
+                <div class="why-item reveal">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                        </svg>
+                    </div>
+                    <h3>Systems Built to Scale</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="philosophy" id="philosophy">
+        <div class="philosophy-bg"></div>
+        <div class="container">
+            <div class="philosophy-content reveal">
+                <span class="section-label" style="justify-content: center;">Our Philosophy</span>
+                <blockquote>"<span>Calm operations</span> outperform chaotic speed."</blockquote>
+                <p>Efficient logistics doesn't announce itself. It simply works. Every time, on time, with clarity and control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-bg"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="reveal">Move forward with <span class="gradient-text">confidence</span></h2>
+                <p class="reveal">Ready to experience logistics that works? Let's discuss how we can support your operations.</p>
+                <div class="cta-actions reveal">
+                    <a href="mailto:info@ramo.com" class="btn btn-primary">
+                        Request a Shipment
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="mailto:info@ramo.com" class="btn btn-secondary">Schedule a Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="44" rx="10" fill="url(#logoGrad2)"/>
+                    <path d="M14 32V12H24C27.866 12 31 15.134 31 19C31 21.95 29.15 24.45 26.5 25.5L32 32" stroke="#0B0F1A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logoGrad2" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00E5FF"/>
+                            <stop offset="1" stop-color="#14b8a6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">RAMO<span>Forward</span></span>
+            </a>
+            <div class="footer-tagline">Logistics. <span>Simplified.</span></div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(11, 15, 26, 0.95)';
+            } else {
+                nav.style.background = 'rgba(11, 15, 26, 0.8)';
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            const spans = mobileMenuBtn.querySelectorAll('span');
+            if (mobileNav.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                const spans = mobileMenuBtn.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 100;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
