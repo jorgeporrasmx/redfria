@@ -7,6 +7,17 @@ controla cada viaje de punta a punta y da seguimiento en tiempo real.
 Derivado de la base de RedFría, reutiliza sus mejores elementos (semáforo de disponibilidad, match
 inteligente, reputación bilateral, contacto por WhatsApp, mapa) y los reorienta a la operación de un broker.
 
+## Despliegue en un clic
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjorgeporrasmx%2Fredfria&root-directory=tracta&project-name=tracta&repository-name=tracta)
+
+> El botón ya viene con **Root Directory = `tracta`** preconfigurado, que es la subcarpeta donde vive la app.
+> Vercel detecta Next.js automáticamente; no requiere variables de entorno.
+
+¿Prefieres importar el repo existente en lugar de clonarlo? Entra a
+[vercel.com/new](https://vercel.com/new), importa `jorgeporrasmx/redfria` y selecciona
+**Root Directory → `tracta`** antes de hacer Deploy.
+
 ## Características
 
 - **Tablero de despacho (Kanban)**: viajes por estatus — cotización, confirmado, asignado, en tránsito, entregado.
