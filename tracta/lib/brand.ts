@@ -6,8 +6,8 @@ export const BRAND = {
     "Plataforma operativa para comisionistas de autotransporte en México. Conecta clientes con transportistas, controla cada viaje y da seguimiento en tiempo real.",
   legal:
     "Tracta es una plataforma de gestión operativa. La empresa opera como comisionista de transporte y no presta directamente el servicio de autotransporte.",
-  // ⚠️ REEMPLAZA con tu WhatsApp de ventas (formato wa.me: 52 + 10 dígitos, sin "+").
-  // Ej. para el número 55 1234 5678 -> "525512345678"
-  salesWhatsapp: "525500000000",
+  // WhatsApp de ventas (formato wa.me: código de país + número, sin "+").
+  // Actual: Sutilde +1 662 427 3301
+  salesWhatsapp: "16624273301",
   salesEmail: "ventas@tracta.mx",
 } as const;

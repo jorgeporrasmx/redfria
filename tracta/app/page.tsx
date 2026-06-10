@@ -38,13 +38,13 @@ export default function SalesLanding() {
               <Truck className="h-4 w-4" /> Software para comisionistas de carga en México
             </span>
             <h1 className="mt-5 text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
-              Toda tu operación de fletes en <span className="text-primary-600">una sola pantalla</span>.
-              No en WhatsApp y Excel.
+              Toda tu operación controlada en{" "}
+              <span className="text-primary-600">un mismo sistema</span>
             </h1>
             <p className="mt-5 text-lg text-gray-600">
               Cotiza, asigna al transportista ideal, da seguimiento en tiempo real y conoce el
-              margen de cada viaje. {BRAND.name} ordena tu operación para que dejes de apagar
-              incendios y empieces a crecer.
+              margen de cada viaje. {BRAND.name} pone tu operación en orden para que tu equipo
+              cierre más viajes y tus clientes reciban mejor servicio.
             </p>
 
             <div className="mt-7 flex flex-wrap items-center gap-3">
